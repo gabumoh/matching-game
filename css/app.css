@@ -1,7 +1,7 @@
 html {
 	box-sizing: border-box;
 }
-*,*::before,*::after {
+*, *::before, *::after {
 	box-sizing: inherit;
 }
 html, body {
@@ -51,7 +51,7 @@ h1 {
 	align-items: center;
 	box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
 }
-.deck .card .open {
+.deck .card.open {
 	transform: rotateY(0);
 	background: #02b3e4;
 	cursor: default;
@@ -60,10 +60,10 @@ h1 {
 	backface-visibility: visible !important;
 	animation-duration: .75s;
 }
-.deck .card .show {
+.deck .card.show {
 	font-size: 33px;
 }
-.deck .card .match {
+.deck .card.match {
 	cursor: default;
 	background: #E5F720;
 	font-size: 33px;
@@ -72,14 +72,14 @@ h1 {
 	backface-visibility: visible !important;
 	animation-duration: .75s;
 }
-.deck .card .unmatched {
+.deck .card.unmatched {
 	animation-name: pulse;
 	-webkit-backface-visibility: visible !important;
 	backface-visibility: visible !important;
 	animation-duration: .75s;
 	background: #e2043b;
 }
-.deck .card .disabled {
+.deck .card.disabled {
 	pointer-events: none;
 	opacity: 0.9;
 }
